@@ -148,6 +148,12 @@ body {
   width: 6rem;
   height: 6rem;
 }
+#home .stripe-footer a:hover span {
+  text-decoration: underline;
+}
+#home .stripe-footer a:hover h3 {
+  color: #666;
+}
 
 /** responsivo *** **/
 @media (max-width: 768px) {
