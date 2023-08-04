@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Tarcisio Brazil" />
+    <meta
+      name="developer"
+      content="entre em contato para adiquirir seu site tarcisio.maciel.dev@outlook.com"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!--- robots --->
+    <meta
+      name="google-site-verification"
+      content="hld1BJTQSFkop_eCPxybT-5uVWfixh3vrUhK5k3h_Xw"
+    />
+    <meta name="robots" content="all" />
+    <meta name="geo.region" content="br-sp" />
+    <meta name="geo.placename" content="São Paulo" />
+    <meta name="revisit-after" content="2 days" />
+    <meta name="keywords" content="inserir palavras chave aqui" />
+
+    <!--- open graphic --->
+    <meta property="og:url" content="http://www.oldygift.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Inserir titulo inicial" />
+    <meta property="og:description" content="Inserir descrição inicial" />
+
+    <meta
+      property="og:image"
+      content="http://www.oldyagency.com.br/img/fb-ogg.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <title>Oldy Agency</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!--nav-->
+    <nav id="nav-main-oldy">
+      <div class="wrapper">
+        <a class="logo-brand" href="#home">
+          <img src="img/logo.png" alt="menu hamburguer" />
+        </a>
+
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="open-menu"
+          onclick="openMenu()"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          class="close-menu"
+          onclick="closeMenu()"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <div class="navbar-oldy menu">
+          <ul>
+            <li class="scroll"><a href="#home" title="Home">Home</a></li>
+            <li class="scroll">
+              <a href="#quem-somos" title="Quem Somos" class="active"
+                >Quem Somos</a
+              >
+            </li>
+            <li class="scroll">
+              <a href="#portfolio" title="Portfolio">Portfolio</a>
+            </li>
+            <li class="scroll">
+              <a href="#contato" title="Contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end nav-->
+
+    <section id="home">
+      <div class="container-fluid">
+        <div class="wrapper">
+          <div class="row welcome">
+            <img src="img/on-off.png" alt="slash switch" />
+            <h1>
+              Do <span class="bold">ON</span> ao <span class="bold">OFF</span>
+              <br />
+              e vice-versa,
+              <br />
+              mas sempre ligada.
+            </h1>
+          </div>
+          <div class="row more">
+            <a href="#quem-somos">
+              <img src="img/arrow-down.png" alt="arrow down" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quem-somos">
+      <div class="container-fluid">
+        <div class="call">
+          <h2>
+            entregamos
+            <span class="primary-color">melhores experiências</span> com
+            <br />
+            resultados de <span class="bold">alta performance</span>.
+          </h2>
+        </div>
+      </div>
+      <div class="container-fluid gray">
+        <div class="wrapper">
+          <div class="content">
+            <div class="switch">
+              <img src="img/quem-somos-switch-top.png" alt="line" />
+            </div>
+            <div class="text-numb">
+              <img src="img/quem-somos-numb.png" alt="numb of words" />
+            </div>
+            <div class="team">
+              <p>
+                Time de especialistas, com mais de 15 anos de mercado, criamos e
+                desenvolvemos campanhas atreladas à estratégia no planejamento,
+                criatividade na execução e inteligência na operação,
+                identificados por meio de indicadores de desempenho, definidos
+                em conjunto com você.
+              </p>
+            </div>
+            <div class="switch-on-off">
+              <img
+                src="img/quem-somos-switch-bottom.png"
+                alt="line with circle"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container-fluid job-resume bg-primary">
+        <div class="wrapper inline">
+          <div class="icon mkt-digital">
+            <a href="#job-gallery">
+              <img src="img/portfolio-mkt-digital.png" alt="celular" />
+              <div class="view-project">
+                <div class="info"><p>Ver projetos</p></div>
+                <div class="switch"></div>
+              </div>
+            </a>
+          </div>
+          <div class="text">
+            <p>
+              Contempla estratégias de comunicação voltadas para o ambiente
+              on-line, sempre com o objetivo de promover empresas, produtos e
+              serviços.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid job-resume bg-gray">
+        <div class="wrapper inline">
+          <div class="icon live-mkt">
+            <img src="img/portfolio-live-mkt.png" alt="megafone" />
+            <div class="view-project">
+              <div class="info"><p>Ver projetos</p></div>
+              <div class="switch"></div>
+            </div>
+          </div>
+          <div class="text">
+            <p>
+              Atuamos no planejamento, criação, operação, produção, tecnologia,
+              jurídico e premiação de campanhas no PDV On e Off line, eventos e
+              feiras.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid job-resume bg-primary">
+        <div class="wrapper inline">
+          <div class="icon design-grafico">
+            <img src="img/portfolio-design-grafico.png" alt="celular" />
+            <div class="view-project">
+              <div class="info"><p>Ver projetos</p></div>
+              <div class="switch"></div>
+            </div>
+          </div>
+          <div class="text">
+            <p>
+              Desenvolvimento e criação de campanhas, logotipos, sites, vídeos,
+              MPDV, panfletos, outdoors, banners, embalagens e anúncios.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid job-resume bg-gray">
+        <div class="wrapper inline">
+          <div class="icon performance">
+            <img src="img/portfolio-performance.png" alt="megafone" />
+            <div class="view-project">
+              <div class="info"><p>Ver projetos</p></div>
+              <div class="switch"></div>
+            </div>
+          </div>
+          <div class="text">
+            <p>
+              Análise no pré, durante e pós, para correções de rotas, geração de
+              insights e performance de vendas e efetividade de canais e
+              comportamento de shopper.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid gallery">
+        <div class="wrapper">
+          <div class="header">
+            <img src="img/portfolio-aquarela.png" alt="aquarela" />
+            <h3>Portfolio</h3>
+          </div>
+          <div class="icons">
+            <a
+              href="javascript:void(0);"
+              class="ico-mkt-digital"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Marketing Digital"
+            >
+              <img src="img/portfolio-ico-mkt-digital.png" alt="celular" />
+            </a>
+            <a
+              href="javascript:void(0);"
+              class="ico-live-mkt"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Live Marketing"
+            >
+              <img src="img/portfolio-ico-live-mkt.png" alt="megafone" />
+            </a>
+            <a
+              href="javascript:void(0);"
+              class="ico-design-grafico"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Design Gráfico"
+            >
+              <img src="img/portfolio-ico-design-grafico.png" alt="caneta" />
+            </a>
+            <a
+              href="javascript:void(0);"
+              class="ico-performance"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Performance"
+            >
+              <img
+                src="img/portfolio-ico-performance.png"
+                alt="aviao de papel"
+              />
+            </a>
+          </div>
+          <div id="job-gallery">
+            <div class="job performance">
+              <a href="javascript:void(0);">
+                <img src="img/portfolio/job-01.jpg" alt="run" />
+              </a>
+            </div>
+            <div class="job design-grafico">
+              <a href="javascript:void(0);">
+                <img src="img/portfolio/job-02.jpg" alt="run" />
+              </a>
+            </div>
+            <div class="job live-mkt">
+              <a href="javascript:void(0);">
+                <img src="img/portfolio/job-01.jpg" alt="run" />
+              </a>
+            </div>
+            <div class="job mkt-digital">
+              <a href="javascript:void(0);">
+                <img src="img/portfolio/job-02.jpg" alt="run" />
+              </a>
+            </div>
+            <div class="job performance">
+              <a href="javascript:void(0);">
+                <img src="img/portfolio/job-01.jpg" alt="run" />
+              </a>
+            </div>
+            <div class="job mkt-digital">
+              <a href="javascript:void(0);">
+                <img src="img/portfolio/job-02.jpg" alt="run" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="oldy-group">
+      <div class="container-fluid bg-black">
+        <div class="wrapper">
+          <div class="logo">
+            <img src="img/logo-gift.png" alt="logo Oldy Gift" />
+            <img src="img/oldy-group-icons.png" alt="many icons" />
+          </div>
+          <div class="resume">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+              accumsan lacus vel facilisis.
+            </p>
+            <a href="http://www.oldygift.com" target="_blank"> Saiba Mais </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clientes">
+      <div class="container-fluid">
+        <div class="wrapper">
+          <h3>QUEM JÁ ESTÁ LIGADO</h3>
+          <div class="logo-clientes">
+            <img src="img/clientes-mafrig.jpg" alt="logo Mafrig" />
+            <img src="img/clientes-lucca.jpg" alt="logo Lucca Baby" />
+            <img src="img/clientes-premier.jpg" alt="logo Premier Pet" />
+            <img src="img/clientes-rd.jpg" alt="logo Raia Drogasil" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container-fluid bg-black">
+        <div class="wrapper">
+          <img src="img/logo.png" class="logo" alt="Logo Oldy Agency" />
+          <div class="contacts">
+            <a href="tel:5511991509523" class="contact mobile">
+              <img src="img/contato-ico-mobile.png" alt="mobile" />
+              <span>11 99150.9523</span>
+            </a>
+            <a href="mailto:comercial@oldyagency.com" class="contact email">
+              <img src="img/contato-ico-mail.png" alt="email" />
+              <span>comercial@oldyagency.com</span>
+            </a>
+            <a
+              href="https://www.instagram.com/oldy.ag/"
+              target="_blank"
+              class="contact insta"
+            >
+              <img src="img/contato-ico-insta.png" alt="instagram" />
+              <span>@oldy.ag</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>&copy; Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="whatsapp">
+        <p class="talk">Fale com<br />a gente</p>
+        <a
+          href="https://api.whatsapp.com/send?phone=5511991509523"
+          target="_blank"
+        >
+          <img src="img/contato-ico-whatsapp.png" alt="Ico Whatapp" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <!--- custom --->
+    <script src="js/pixi.jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
