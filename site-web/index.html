@@ -47,7 +47,7 @@
 
   <body>
     <!--nav-->
-    <nav id="nav-main-oldy">
+    <nav id="nav-main-oldy" aria-label="menu-site">
       <div class="wrapper">
         <a class="logo-brand" href="#home">
           <img src="img/logo.png" alt="menu hamburguer" />
@@ -122,7 +122,7 @@
               >
             </li>
             <li class="scroll">
-              <a href="#portfolio" title="Portfolio">Portfolio</a>
+              <a href="#portfolio" title="Portfolio">Portfólio</a>
             </li>
             <li class="scroll">
               <a href="#contato" title="Contato">Contato</a>
@@ -134,17 +134,36 @@
     <!--end nav-->
 
     <section id="home">
-      <div class="container-fluid">
+      <div class="container-fluid video-container">
+        <video autoplay muted loop poster="img/home-bg.jpg">
+          <source src="media/videos/home.mp4" type="video/mp4" />
+          <source src="media/videos/home.ogv" type="video/ogg" />
+          <source src="media/videos/home.webm" type="video/webm" />
+        </video>
         <div class="wrapper">
-          <div class="row welcome">
-            <img src="img/on-off.png" alt="slash switch" />
-            <h1>
-              Do <span class="bold">ON</span> ao <span class="bold">OFF</span>
-              <br />
-              e vice-versa,
-              <br />
-              mas sempre ligada.
-            </h1>
+          <div class="content">
+            <div class="welcome">
+              <div class="barra-animated">
+                <div class="circle"></div>
+                <div class="slash"></div>
+
+                <!-- <svg viewBox="0 0 141.73 141.73">
+                  <circle class="circle" cx="66.72" cy="90.15" r="5.76" />
+                  <polygon
+                    class="slash"
+                    points="75.41,95.57 99.85,33.17 95,33.17 70.56,95.57 "
+                  />
+                </svg> -->
+              </div>
+              <!-- <img src="img/on-off.png" alt="slash switch" /> -->
+              <h1>
+                Do <span class="bold">ON</span> ao <span class="bold">OFF</span>
+                <br />
+                e vice-versa,
+                <br />
+                mas sempre ligada.
+              </h1>
+            </div>
           </div>
           <div class="row more">
             <a href="#quem-somos">
@@ -198,8 +217,8 @@
     <section id="portfolio">
       <div class="container-fluid job-resume bg-primary">
         <div class="wrapper inline">
-          <div class="icon mkt-digital">
-            <a href="#job-gallery">
+          <div class="icon">
+            <a href="#job-gallery" class="ico_mkt-digital">
               <img src="img/portfolio-mkt-digital.png" alt="celular" />
               <div class="view-project">
                 <div class="info"><p>Ver projetos</p></div>
@@ -219,12 +238,14 @@
 
       <div class="container-fluid job-resume bg-gray">
         <div class="wrapper inline">
-          <div class="icon live-mkt">
-            <img src="img/portfolio-live-mkt.png" alt="megafone" />
-            <div class="view-project">
-              <div class="info"><p>Ver projetos</p></div>
-              <div class="switch"></div>
-            </div>
+          <div class="icon">
+            <a href="#job-gallery" class="ico_live-mkt">
+              <img src="img/portfolio-live-mkt.png" alt="megafone" />
+              <div class="view-project">
+                <div class="info"><p>Ver projetos</p></div>
+                <div class="switch"></div>
+              </div>
+            </a>
           </div>
           <div class="text">
             <p>
@@ -238,12 +259,14 @@
 
       <div class="container-fluid job-resume bg-primary">
         <div class="wrapper inline">
-          <div class="icon design-grafico">
-            <img src="img/portfolio-design-grafico.png" alt="celular" />
-            <div class="view-project">
-              <div class="info"><p>Ver projetos</p></div>
-              <div class="switch"></div>
-            </div>
+          <div class="icon">
+            <a href="#job-gallery" class="ico_design-grafico">
+              <img src="img/portfolio-design-grafico.png" alt="celular" />
+              <div class="view-project">
+                <div class="info"><p>Ver projetos</p></div>
+                <div class="switch"></div>
+              </div>
+            </a>
           </div>
           <div class="text">
             <p>
@@ -256,12 +279,14 @@
 
       <div class="container-fluid job-resume bg-gray">
         <div class="wrapper inline">
-          <div class="icon performance">
-            <img src="img/portfolio-performance.png" alt="megafone" />
-            <div class="view-project">
-              <div class="info"><p>Ver projetos</p></div>
-              <div class="switch"></div>
-            </div>
+          <div class="icon">
+            <a href="#job-gallery" class="ico_performance">
+              <img src="img/portfolio-performance.png" alt="megafone" />
+              <div class="view-project">
+                <div class="info"><p>Ver projetos</p></div>
+                <div class="switch"></div>
+              </div>
+            </a>
           </div>
           <div class="text">
             <p>
@@ -277,12 +302,12 @@
         <div class="wrapper">
           <div class="header">
             <img src="img/portfolio-aquarela.png" alt="aquarela" />
-            <h3>Portfolio</h3>
+            <h3>Portfólio</h3>
           </div>
           <div class="icons">
             <a
               href="javascript:void(0);"
-              class="ico-mkt-digital"
+              class="ico_mkt-digital"
               data-toggle="tooltip"
               data-placement="top"
               title="Marketing Digital"
@@ -291,7 +316,7 @@
             </a>
             <a
               href="javascript:void(0);"
-              class="ico-live-mkt"
+              class="ico_live-mkt"
               data-toggle="tooltip"
               data-placement="top"
               title="Live Marketing"
@@ -300,7 +325,7 @@
             </a>
             <a
               href="javascript:void(0);"
-              class="ico-design-grafico"
+              class="ico_design-grafico"
               data-toggle="tooltip"
               data-placement="top"
               title="Design Gráfico"
@@ -309,7 +334,7 @@
             </a>
             <a
               href="javascript:void(0);"
-              class="ico-performance"
+              class="ico_performance"
               data-toggle="tooltip"
               data-placement="top"
               title="Performance"
@@ -321,34 +346,227 @@
             </a>
           </div>
           <div id="job-gallery">
-            <div class="job performance">
-              <a href="javascript:void(0);">
-                <img src="img/portfolio/job-01.jpg" alt="run" />
+            <div class="job live-mkt">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-01"
+              >
+                <img src="img/portfolio/job-01.jpg" alt="Baygon" />
               </a>
             </div>
             <div class="job design-grafico">
-              <a href="javascript:void(0);">
-                <img src="img/portfolio/job-02.jpg" alt="run" />
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-02"
+              >
+                <img src="img/portfolio/job-02.jpg" alt="Becel" />
+              </a>
+            </div>
+            <div class="job mkt-digital">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-03"
+              >
+                <img src="img/portfolio/job-03.jpg" alt="Chilli Beans" />
               </a>
             </div>
             <div class="job live-mkt">
-              <a href="javascript:void(0);">
-                <img src="img/portfolio/job-01.jpg" alt="run" />
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-04"
+              >
+                <img src="img/portfolio/job-04.jpg" alt="Danone" />
               </a>
             </div>
-            <div class="job mkt-digital">
-              <a href="javascript:void(0);">
-                <img src="img/portfolio/job-02.jpg" alt="run" />
+            <div class="job design-grafico">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-05"
+              >
+                <img src="img/portfolio/job-05.jpg" alt="Disney" />
               </a>
             </div>
-            <div class="job performance">
-              <a href="javascript:void(0);">
-                <img src="img/portfolio/job-01.jpg" alt="run" />
+            <div class="job design-grafico">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-06"
+              >
+                <img src="img/portfolio/job-06.jpg" alt="Fagra" />
               </a>
             </div>
-            <div class="job mkt-digital">
-              <a href="javascript:void(0);">
-                <img src="img/portfolio/job-02.jpg" alt="run" />
+
+            <div class="job live-mkt">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-07"
+              >
+                <img src="img/portfolio/job-07.jpg" alt="Farinha" />
+              </a>
+            </div>
+            <div class="job design-grafico">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-08"
+              >
+                <img src="img/portfolio/job-08.jpg" alt="Fluimicil" />
+              </a>
+            </div>
+            <div class="job design-grafico">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-09"
+              >
+                <img src="img/portfolio/job-09.jpg" alt="Free Skin" />
+              </a>
+            </div>
+            <div class="job design-grafico">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-10"
+              >
+                <img src="img/portfolio/job-10.jpg" alt="Genuino" />
+              </a>
+            </div>
+            <div class="job design-grafico">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-11"
+              >
+                <img src="img/portfolio/job-11.jpg" alt="Hidracel" />
+              </a>
+            </div>
+
+            <div class="job live-mkt">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-12"
+              >
+                <img src="img/portfolio/job-12.jpg" alt="Meu Bebê" />
+              </a>
+            </div>
+            <div class="job design-grafico">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-13"
+              >
+                <img src="img/portfolio/job-13.jpg" alt="Nutella" />
+              </a>
+            </div>
+            <div class="job design-grafico">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-14"
+              >
+                <img src="img/portfolio/job-14.jpg" alt="Osmo Gel" />
+              </a>
+            </div>
+            <div class="job live-mkt">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-15"
+              >
+                <img src="img/portfolio/job-15.jpg" alt="Pato" />
+              </a>
+            </div>
+            <div class="job design-grafico">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-16"
+              >
+                <img src="img/portfolio/job-16.jpg" alt="Rosa Clean" />
+              </a>
+            </div>
+
+            <div class="job design-grafico">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-17"
+              >
+                <img src="img/portfolio/job-17.jpg" alt="Smirnoff" />
+              </a>
+            </div>
+            <div class="job live-mkt">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-18"
+              >
+                <img src="img/portfolio/job-18.jpg" alt="Smurfs" />
+              </a>
+            </div>
+            <div class="job live-mkt">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-19"
+              >
+                <img src="img/portfolio/job-19.jpg" alt="Nescafé" />
+              </a>
+            </div>
+            <div class="job design-grafico">
+              <a
+                href="javascript:void(0);"
+                data-toggle="modal"
+                data-target="#ModalPortfolio"
+                title="Ver Projeto"
+                id="id_promo-20"
+              >
+                <img src="img/portfolio/job-20.jpg" alt="Woodbridge" />
               </a>
             </div>
           </div>
@@ -365,10 +583,11 @@
           </div>
           <div class="resume">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
+              Com a OLDY GIFT você tem uma empresa especializada em criar
+              experiências marcantes com gifts especiais, customizados de acordo
+              com o momento ou a necessidade de cada projeto. Você conta com a
+              nossa pesquisa, apoio de produção, estratégia operacional e
+              logística para fazer sua comunicação chegar no destino certo.
             </p>
             <a href="http://www.oldygift.com" target="_blank"> Saiba Mais </a>
           </div>
@@ -384,7 +603,6 @@
             <img src="img/clientes-mafrig.jpg" alt="logo Mafrig" />
             <img src="img/clientes-lucca.jpg" alt="logo Lucca Baby" />
             <img src="img/clientes-premier.jpg" alt="logo Premier Pet" />
-            <img src="img/clientes-rd.jpg" alt="logo Raia Drogasil" />
           </div>
         </div>
       </div>
@@ -436,8 +654,765 @@
       </div>
     </section>
 
+    <!--- Modal --->
+    <div
+      class="modal fade"
+      id="ModalPortfolio"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="ModalPortfolio"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content nova-base">
+          <div class="modal-header bg-black">
+            <div class="logo">
+              <img src="img/logo.png" alt="Logo Oldy Agency" />
+            </div>
+            <h3 class="promo-name">&nbsp;</h3>
+
+            <div class="nav-portifolio">
+              <nav aria-label="menu-slider">
+                <a href="#" class="prev">
+                  <svg width="50" height="50" viewBox="0 0 20 20">
+                    <path
+                      fill="#FFFFFF"
+                      stroke-width="0"
+                      d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"
+                    ></path>
+                  </svg>
+                </a>
+
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <a href="#" class="next">
+                  <svg width="50" height="50" viewBox="0 0 20 20">
+                    <path
+                      fill="#FFFFFF"
+                      stroke-width="0"
+                      d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z"
+                    ></path>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+          </div>
+          <div id="custom-slider" class="modal-body">
+            <div class="cd-slider">
+              <ul>
+                <li class="item promo-01">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/01/main.jpg" alt="Main image" />
+                    </div>
+                    <div class="info">
+                      <!-- <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div> -->
+                      <div class="descriptive">
+                        <!-- <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p> -->
+                        <div class="gallery-job">
+                          <img src="img/portfolio/01/01.jpg" alt="job image" />
+                          <img src="img/portfolio/01/02.jpg" alt="job image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-02">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/02/main.jpg" alt="Main image" />
+                    </div>
+                    <div class="info">
+                      <!-- <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div> -->
+                      <div class="descriptive">
+                        <!-- <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p> -->
+                        <div class="gallery-job">
+                          <img src="img/portfolio/02/01.jpg" alt="job image" />
+                          <img src="img/portfolio/02/02.jpg" alt="job image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- promo 3 --->
+                <li class="item promo-03">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/03/main.jpg" alt="Main image" />
+                    </div>
+                    <!-- <div class="info">
+                      <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div>
+                      <div class="descriptive">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p>
+                        <div class="gallery-job"></div>
+                      </div>
+                    </div> -->
+                  </div>
+                </li>
+
+                <!-- promo 4 --->
+                <li class="item promo-04">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/04/main.jpg" alt="Main image" />
+                    </div>
+                    <div class="info">
+                      <!-- <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div> -->
+                      <div class="descriptive">
+                        <!-- <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p> -->
+                        <div class="gallery-job">
+                          <img src="img/portfolio/04/01.jpg" alt="job image" />
+                          <img src="img/portfolio/04/02.jpg" alt="job image" />
+                          <img src="img/portfolio/04/03.jpg" alt="job image" />
+                          <img src="img/portfolio/04/04.jpg" alt="job image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-05">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/05/main.jpg" alt="Main image" />
+                    </div>
+                    <!-- <div class="info">
+                      <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div
+                      <div class="descriptive">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p>
+                        <div class="gallery-job"></div>
+                      </div>>
+                    </div> -->
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-06">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/06/main.jpg" alt="Main image" />
+                    </div>
+                    <!-- <div class="info">
+                      <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div>
+                      <div class="descriptive">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p>
+                        <div class="gallery-job"></div>
+                      </div>
+                    </div> -->
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-07">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/07/main.jpg" alt="Main image" />
+                    </div>
+                    <div class="info">
+                      <!-- <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div> -->
+                      <div class="descriptive">
+                        <!-- <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p> -->
+                        <div class="gallery-job">
+                          <img src="img/portfolio/07/01.jpg" alt="job image" />
+                          <img src="img/portfolio/07/02.jpg" alt="job image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-08">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/08/main.jpg" alt="Main image" />
+                    </div>
+                    <!-- <div class="info">
+                      <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div>
+                      <div class="descriptive">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p>
+                        <div class="gallery-job"></div>
+                      </div>
+                    </div> -->
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-09">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/09/main.jpg" alt="Main image" />
+                    </div>
+                    <div class="info">
+                      <!-- <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div> 
+                      </div>-->
+                      <div class="descriptive">
+                        <!-- <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p> -->
+                        <div class="gallery-job">
+                          <img src="img/portfolio/09/01.jpg" alt="job image" />
+                          <img src="img/portfolio/09/02.jpg" alt="job image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-10">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/10/main.jpg" alt="Main image" />
+                    </div>
+                    <!-- <div class="info">
+                      <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div>
+                      <div class="descriptive">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p>
+                        <div class="gallery-job"></div>
+                      </div>
+                    </div> -->
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-11">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/11/main.jpg" alt="Main image" />
+                    </div>
+                    <!-- <div class="info">
+                      <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div>
+                      <div class="descriptive">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p>
+                        <div class="gallery-job"></div>
+                      </div>
+                    </div> -->
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-12">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/12/main.jpg" alt="Main image" />
+                    </div>
+                    <div class="info">
+                      <!-- <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div> -->
+                      <div class="descriptive">
+                        <!-- <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p> -->
+                        <div class="gallery-job">
+                          <img src="img/portfolio/12/01.jpg" alt="job image" />
+                          <img src="img/portfolio/12/02.jpg" alt="job image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-13">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/13/main.jpg" alt="Main image" />
+                    </div>
+                    <!-- <div class="info">
+                      <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div>
+                      <div class="descriptive">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p>
+                        <div class="gallery-job"></div>
+                      </div>
+                    </div> -->
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-14">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/14/main.jpg" alt="Main image" />
+                    </div>
+                    <!-- <div class="info">
+                      <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div>
+                      <div class="descriptive">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p>
+                        <div class="gallery-job"></div>
+                      </div>
+                    </div> -->
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-15">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/15/main.jpg" alt="Main image" />
+                    </div>
+                    <div class="info">
+                      <!-- <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div> -->
+                      <div class="descriptive">
+                        <!-- <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p> -->
+                        <div class="gallery-job">
+                          <img src="img/portfolio/15/01.jpg" alt="job image" />
+                          <img src="img/portfolio/15/02.jpg" alt="job image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-16">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/16/main.jpg" alt="Main image" />
+                    </div>
+                    <!-- <div class="info">
+                      <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div>
+                      <div class="descriptive">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p>
+                        <div class="gallery-job"></div>
+                      </div>
+                    </div> -->
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-17">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/17/main.jpg" alt="Main image" />
+                    </div>
+                    <!-- <div class="info">
+                      <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div>
+                      <div class="descriptive">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p>
+                        <div class="gallery-job"></div>
+                      </div>
+                    </div> -->
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-18">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/18/main.jpg" alt="Main image" />
+                    </div>
+                    <!-- <div class="info">
+                      <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div>
+                      <div class="descriptive">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p>
+                        <div class="gallery-job"></div>
+                      </div>
+                    </div> -->
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-19">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/19/main.jpg" alt="Main image" />
+                    </div>
+                    <div class="info">
+                      <!-- <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div> -->
+                      <div class="descriptive">
+                        <!-- <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p> -->
+                        <div class="gallery-job">
+                          <img src="img/portfolio/19/01.jpg" alt="job image" />
+                          <img src="img/portfolio/19/02.jpg" alt="job image" />
+                          <img src="img/portfolio/19/03.jpg" alt="job image" />
+                          <img src="img/portfolio/19/04.jpg" alt="job image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- promo 2 --->
+                <li class="item promo-20">
+                  <!-- <h3 class="promotion">Promoção Baygon</h3> -->
+
+                  <div class="card">
+                    <div class="img">
+                      <img src="img/portfolio/20/main.jpg" alt="Main image" />
+                    </div>
+                    <div class="info">
+                      <!-- <div class="about">
+                        <div class="client">
+                          <p>Cliente</p>
+                          <h4>SC JOHNSON</h4>
+                        </div>
+                        <div class="product">
+                          <p>Produto</p>
+                          <h4>Baygon Ação Total</h4>
+                        </div>
+                      </div> -->
+                      <div class="descriptive">
+                        <!-- <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Eveniet dolorem aperiam eos beatae inventore ad
+                          non, sunt quo minima dolor. Voluptatibus quisquam,
+                          sunt officiis a reiciendis ex eaque doloremque
+                          consectetur?
+                        </p> -->
+                        <div class="gallery-job">
+                          <img src="img/portfolio/20/01.jpg" alt="job image" />
+                          <img src="img/portfolio/20/02.jpg" alt="job image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer form-geracao">
+              <button
+                type="button"
+                data-dismiss="modal"
+                aria-label="Close"
+                class="btn-fecharModeracao btn btn-sm btn-link btn-link-custom"
+              >
+                Fechar<span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <!--- custom --->
     <script src="js/pixi.jquery.js"></script>
