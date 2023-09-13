@@ -415,26 +415,25 @@ body.menu-expanded .menu {
   height: 3rem;
   background-color: #fff;
   border-radius: 50%;
-  animation: anima-circle 10s infinite;
+  animation: anima-circle 3s infinite alternate;
 }
 
 @keyframes anima-circle {
-  0% {
-    transform: translateY(0rem) translateX(0rem);
-    background-color: #fff;
-  }
-  45% {
-    transform: translateY(0rem) translateX(0rem);
-  }
-  50% {
-    transform: translateY(-13rem) translateX(7.5rem);
-  }
-  95% {
-    transform: translateY(-13rem) translateX(7.5rem);
-  }
-  100% {
+  0%,
+  30% {
     transform: translateY(0rem) translateX(0rem);
     background-color: var(--primary-color);
+  }
+  70%,
+  100% {
+    transform: translateY(-13rem) translateX(7.5rem);
+    background-color: var(--primary-color);
+  }
+}
+
+@media (max-width: 1023px) {
+  #home .content {
+    transform: translateX(0%);
   }
 }
 
@@ -442,14 +441,34 @@ body.menu-expanded .menu {
   #home {
     margin-top: 6rem;
   }
+  #home .content {
+    transform: translateX(0%);
+  }
   #home .welcome {
-    padding-inline: 1.5rem 0;
+    padding-inline: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0rem;
+  }
+  @media (max-width: 767px) {
+    #home {
+      margin-top: 6rem;
+    }
+    #home .content {
+      transform: translateX(0%);
+    }
+    #home .welcome {
+      padding-inline: 0.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-left: 0rem;
+    }
   }
   #home .welcome img {
     height: 7rem;
   }
   #home .welcome h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin-left: 1rem;
   }
   #home .more {
@@ -461,6 +480,11 @@ body.menu-expanded .menu {
   }
 }
 
+@media (max-width: 350px) {
+  #home .welcome h1 {
+    margin-left: 5rem;
+  }
+}
 /**
 *** quem-somos
 **/
