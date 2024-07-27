@@ -307,17 +307,18 @@ body.menu-expanded .menu {
 
 #home .container-fluid {
   position: relative;
-  height: 85vh;
 
   display: flex;
   align-items: center;
   justify-content: left;
-
+  /*
+  height: 85vh;
   background-image: url(../img/home-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
+  */
 }
 
 #home .video-container video {
@@ -336,6 +337,7 @@ body.menu-expanded .menu {
   left: 0;
   display: inline-block;
   transform: translateX(-20%);
+  z-index: 2;
 }
 
 #home .welcome {
@@ -380,6 +382,32 @@ body.menu-expanded .menu {
   top: 0px;
   height: 8rem;
   animation: anima-seta 700ms ease infinite;
+}
+#home .video-background {
+  position: relative;
+  width: 100%;
+  height: 92vh;
+  overflow: hidden;
+}
+#home .video-background iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 130%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+#home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+  z-index: 1;
 }
 
 @keyframes anima-seta {
@@ -899,38 +927,75 @@ body.menu-expanded .menu {
 **/
 
 #clientes {
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 
-#clientes .wrapper h3 {
+#clientes h3 {
   display: inline-block;
   text-transform: uppercase;
   color: #000;
   font-size: 4rem;
   font-weight: 600;
+  margin-bottom: 10rem;
 }
 
-#clientes .wrapper .logo-clientes {
+#clientes .carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#clientes .carousel-slides {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding: 5rem;
+  transition: transform 0.5s ease-in-out;
 }
 
-#clientes .wrapper .logo-clientes img {
-  width: 25rem;
+#clientes .carousel-slide {
+  min-width: 20%;
+  box-sizing: border-box;
 }
+
+#clientes .carousel-slide img {
+  width: 100%;
+  display: block;
+}
+
+#clientes .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 5rem;
+  line-height: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clientes .carousel-button_previous {
+  left: 0;
+}
+
+#clientes .carousel-button_next {
+  right: 0;
+}
+
+/* Media query para dispositivos móveis */
 
 @media (max-width: 767px) {
   #clientes {
     padding: 5rem 0 1rem 0;
   }
 
-  #clientes .wrapper h3 {
+  #clientes h3 {
     display: inline-block;
     text-transform: uppercase;
     padding: 0;
@@ -938,15 +1003,8 @@ body.menu-expanded .menu {
     font-weight: 600;
   }
 
-  #clientes .wrapper .logo-clientes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
+  #clientes .carousel-slide {
+    min-width: 100%;
   }
 }
 
@@ -964,10 +1022,23 @@ body.menu-expanded .menu {
 
 #contato .wrapper .contacts {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   flex-direction: row;
   gap: 2rem;
+}
+
+#contato .wrapper .contacts .flex-child {
+  width: 50%;
+}
+
+#contato .wrapper .contacts .flex-child.links {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 10rem;
 }
 
 #contato .wrapper .contacts a img {
@@ -988,6 +1059,28 @@ body.menu-expanded .menu {
   color: var(--brand-light);
 }
 
+#contato .wrapper .contacts .flex-child.forms {
+  text-align: left;
+}
+
+#contato .wrapper .contacts .flex-child.forms label {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+#contato .wrapper .contacts .flex-child.forms .btn {
+  background-color: var(--primary-color);
+  color: var(--brand-light);
+}
+
+#contato .wrapper .contacts .flex-child.forms .success {
+  color: var(--brand-light);
+}
+
+#contato .wrapper .contacts .flex-child.forms .error {
+  color: tomato;
+}
+
 @media (max-width: 767px) {
   #contato .wrapper .contacts {
     display: flex;
@@ -1003,6 +1096,9 @@ body.menu-expanded .menu {
     justify-content: start;
     flex-direction: row;
     gap: 0.5rem;
+  }
+  #contato .wrapper .contacts .flex-child {
+    width: 100%;
   }
   #contato .wrapper .contacts a img {
     width: 2rem;

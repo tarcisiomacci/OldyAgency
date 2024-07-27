@@ -41,11 +41,48 @@
     <link rel="shortcut icon" href="img/favicon.png" />
 
     <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <!--Linkedin-->
+    <script type="text/javascript">
+      _linkedin_partner_id = "6664897";
+      window._linkedin_data_partner_ids =
+        window._linkedin_data_partner_ids || [];
+      window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+    <script type="text/javascript">
+      (function (l) {
+        if (!l) {
+          window.lintrk = function (a, b) {
+            window.lintrk.q.push([a, b]);
+          };
+          window.lintrk.q = [];
+        }
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";
+        b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+      })(window.lintrk);
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        alt=""
+        src="https://px.ads.linkedin.com/collect/?pid=6664897&fmt=gif"
+      />
+    </noscript>
+
     <!--nav-->
     <nav id="nav-main-oldy" aria-label="menu-site">
       <div class="wrapper">
@@ -134,6 +171,39 @@
     <!--end nav-->
 
     <section id="home">
+      <div class="video-background container-fluid">
+        <div class="overlay"></div>
+        <iframe
+          src="https://www.youtube.com/embed/OEkOSRK9hqA?autoplay=1&mute=1&loop=1&playlist=OEkOSRK9hqA"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="wrapper">
+          <div class="content">
+            <div class="welcome">
+              <div class="barra-animated">
+                <div class="circle"></div>
+                <div class="slash"></div>
+              </div>
+              <h1>
+                Do <span class="bold">ON</span> ao
+                <span class="bold">OFF</span>
+                <br />
+                e vice-versa,
+                <br />
+                mas sempre ligada.
+              </h1>
+            </div>
+          </div>
+          <div class="row more">
+            <a href="#quem-somos">
+              <img src="img/arrow-down.png" alt="arrow down" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!---
       <div class="container-fluid video-container">
         <video autoplay muted loop poster="img/home-bg.jpg">
           <source src="media/videos/home.mp4" type="video/mp4" />
@@ -146,16 +216,7 @@
               <div class="barra-animated">
                 <div class="circle"></div>
                 <div class="slash"></div>
-
-                <!-- <svg viewBox="0 0 141.73 141.73">
-                  <circle class="circle" cx="66.72" cy="90.15" r="5.76" />
-                  <polygon
-                    class="slash"
-                    points="75.41,95.57 99.85,33.17 95,33.17 70.56,95.57 "
-                  />
-                </svg> -->
               </div>
-              <!-- <img src="img/on-off.png" alt="slash switch" /> -->
               <h1>
                 Do <span class="bold">ON</span> ao <span class="bold">OFF</span>
                 <br />
@@ -172,6 +233,7 @@
           </div>
         </div>
       </div>
+      -->
     </section>
 
     <section id="quem-somos">
@@ -597,14 +659,74 @@
       </div>
     </section>
 
+    <style></style>
+
     <section id="clientes">
       <div class="container-fluid">
-        <div class="wrapper">
+        <div class="">
           <h3>QUEM JÁ ESTÁ LIGADO</h3>
-          <div class="logo-clientes">
-            <img src="img/clientes-mafrig.jpg" alt="logo Mafrig" />
-            <img src="img/clientes-lucca.jpg" alt="logo Lucca Baby" />
-            <img src="img/clientes-premier.jpg" alt="logo Premier Pet" />
+          <div class="carousel" data-carousel>
+            <button
+              class="carousel-button carousel-button_previous"
+              aria-label="Previous slide"
+              data-carousel-button-previous
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel-slides" data-carousel-slides-container>
+              <div class="carousel-slide">
+                <img src="img/clientes/mafrig.jpg" alt="logo Mafrig" />
+              </div>
+
+              <div class="carousel-slide">
+                <img
+                  src="img/clientes/montana-steakhouse.jpg"
+                  alt="logo Montana Steakhouse"
+                />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="img/clientes/lucca.jpg" alt="logo Lucca Baby" />
+              </div>
+
+              <div class="carousel-slide">
+                <img
+                  src="img/clientes/montana-mafrig.jpg"
+                  alt="logo Montana Mafrig"
+                />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="img/clientes/premier.jpg" alt="logo Premier Pet" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="img/clientes/3albe.jpg" alt="logo 3 Albe" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="img/clientes/3b-kasa.jpg" alt="logo 3b Kasa" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="img/clientes/azul.jpg" alt="logo Azul" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="img/clientes/bassi.jpg" alt="logo Bassi" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="img/clientes/rd.jpg" alt="logo RD" />
+              </div>
+            </div>
+            <button
+              class="carousel-button carousel-button_next"
+              aria-label="Next slide"
+              data-carousel-button-next
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -614,23 +736,105 @@
       <div class="container-fluid bg-black">
         <div class="wrapper">
           <img src="img/logo.png" class="logo" alt="Logo Oldy Agency" />
+
           <div class="contacts">
-            <a href="tel:5511991509523" class="contact mobile">
-              <img src="img/contato-ico-mobile.png" alt="mobile" />
-              <span>11 99150.9523</span>
-            </a>
-            <a href="mailto:comercial@oldyagency.com" class="contact email">
-              <img src="img/contato-ico-mail.png" alt="email" />
-              <span>comercial@oldyagency.com</span>
-            </a>
-            <a
-              href="https://www.instagram.com/oldy.ag/"
-              target="_blank"
-              class="contact insta"
-            >
-              <img src="img/contato-ico-insta.png" alt="instagram" />
-              <span>@oldy.ag</span>
-            </a>
+            <div class="flex-child links">
+              <a href="tel:5511991509523" class="contact mobile">
+                <span>11 96923.7210</span>
+                <img src="img/contato-ico-mobile.png" alt="mobile" />
+              </a>
+              <a href="mailto:comercial@oldyagency.com" class="contact email">
+                <span>comercial@oldyagency.com</span>
+                <img src="img/contato-ico-mail.png" alt="email" />
+              </a>
+              <a
+                href="https://www.instagram.com/oldy.ag/"
+                target="_blank"
+                class="contact insta"
+              >
+                <span>@oldy.ag</span>
+                <img src="img/contato-ico-insta.png" alt="instagram" />
+              </a>
+            </div>
+            <div class="flex-child forms">
+              <div>
+                <form
+                  action="https://formsubmit.co/comercial@oldyagency.com"
+                  method="POST"
+                  data-form
+                >
+                  <input type="hidden" name="_captcha" value="false" />
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="col">
+                        <label for="nome">Nome completo</label>
+                        <input
+                          type="text"
+                          name="nome"
+                          id="nome"
+                          class="form-control"
+                          maxlength="150"
+                          required
+                        />
+                      </div>
+                      <div class="col">
+                        <label for="celular">Celular</label>
+                        <input
+                          type="text"
+                          name="celular"
+                          id="celular"
+                          class="form-control celular"
+                          placeholder="(11) 91234-5678"
+                          maxlength="15"
+                          required
+                        />
+                      </div>
+                      <div class="col">
+                        <label for="email">E-mail</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          class="form-control"
+                          maxlength="150"
+                          required
+                        />
+                      </div>
+                      <div class="col">
+                        <label for="assunto">Assunto</label>
+                        <input
+                          type="text"
+                          name="assunto"
+                          id="assunto"
+                          class="form-control"
+                          maxlength="150"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea
+                      placeholder="Deixe aqui sua mensagem"
+                      class="form-control"
+                      name="message"
+                      id="message"
+                      rows="3"
+                      maxlength="500"
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-dark btn-block"
+                    data-button
+                  >
+                    Enviar mensagem
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1416,8 +1620,14 @@
     <!-- Bootstrap core JavaScript -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <!--- custom --->
     <script src="js/pixi.jquery.js"></script>
+    <script src="js/pixi.mask.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
